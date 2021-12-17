@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="main">
+        <div class="musicContainer">
+            <h2 id="title">Aashiqui Aa Gayi</h2>
+            <h3 id="artist">Prabhas, Pooja Hegde</h3>
+            <div class="imgContainer " id="imgContainer">
+                <img src="images/radheshyam.jpg" id="imgpic" alt="" width="200px" height="200px">
+            </div>
+            <audio src="musics/Aashiqui Aa Gayi.mp3" ></audio>
+
+            <!-- controls -->
+            <div class="progressContainer" id="progressContainer">
+                <div class="progressDurationMeter">
+                    <div class="currentTime" id="curTime">0:00</div>
+                     <div id="durationTime">00:00</div>   
+                </div>
+                <div class="progressDiv" id="progressDiv" >
+                    <div class="progress" id="progress"></div>
+                </div>
+
+
+            </div>
+            <div class="musicControls">
+                <i class="fa fa-backward" aria-hidden="true" id="prev" title="Previous"></i>
+                <i class="fa fa-play" aria-hidden="true" id="play" title="Play"></i>
+                <i class="fa fa-forward" aria-hidden="true" id="next" title="Next"></i>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
